@@ -1,12 +1,12 @@
 # osx-cpu-alert
-Creates a notification if load (CPU usage) is above a maximum (for Mac OS X)
+Creates a notification if load (CPU usage) is above a maximum (for Mac OS X). By default load will be checked every 30 seconds.
 
-My computer was churning and used up my battery, so I wanted a notification if 5-min load is above a threshold. If so, I can check activity monitor and see what's eating my battery.
-
-In the future, I may make it battery-only (no notification if running on AC).
+## Notes
+The log contains the full cmdilne args for the process captured. cmdline args can contain secrets in some cases
 
 ## Config & install
-1. Put the two files somewhere permanent.
-2. Change the `max_load` value in `cpu_alert.rb` to your desired level. My normal load is around 1.2 so I used 3.
-3. Update the location of the script in the plist file.
-4. Copy the plist to ~/Library/LaunchAgents
+1. Change the `max_load` value in `cpu_alert.rb` to your desired level. Above 3ish should be high load
+2. Run the install shell script (It is very simple please check it out for yourself)
+
+## Uninstall
+1. Run the uninstall script
