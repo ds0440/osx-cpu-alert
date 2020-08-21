@@ -4,11 +4,14 @@
 <dict>
     <key>Label</key>
     <string>is.iceton.cpu_alert</string>
+    <key>RunAtLoad</key>
+    <true/>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/ti/ruby/cpu_alert/cpu_alert.rb</string>
+        <string>/usr/bin/ruby</string>
+        <string>/usr/local/bin/cpu_alert.rb</string>
     </array>
     <key>StartInterval</key>
-    <integer>180</integer>
+    <integer>30</integer>
 </dict>
 </plist>
