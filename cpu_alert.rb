@@ -17,7 +17,7 @@ if load_1min > max_load
   ps1_split = ps1_raw.split(" ")
   ps1_basename = File.basename(ps1_split.last)
   f = File.new("#{Dir.home}/Desktop/ps_log.txt", "a")
-  f.write("\n-----------Load Avg: #{load_1min}------------\n#{ps1_raw}\n#{ps2_raw}\n#{ps3_raw}\n#{ps4_raw}\n#{ps5_raw}\n---------------end-------------------")
+  f.write("\n-----------Load Avg: #{load_1min}------------ #{Time.now}\n#{ps1_raw}\n#{ps2_raw}\n#{ps3_raw}\n#{ps4_raw}\n#{ps5_raw}\n---------------end-------------------")
   `osascript -e 'display notification "#{load_1min} load > #{max_load} max\n#{ps1_split[2]}% #{ps1_basename}" with title "High Load"'`
   
 end
