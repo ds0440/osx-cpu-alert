@@ -4,8 +4,6 @@
 <dict>
     <key>Label</key>
     <string>is.iceton.cpu_alert</string>
-    <key>RunAtLoad</key>
-    <true/>
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/ruby</string>

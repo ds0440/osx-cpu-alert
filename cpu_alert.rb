@@ -1,6 +1,6 @@
 #!/usr/local/bin/ruby
 
-max_load = 15
+max_load = 4
 
 load = `sysctl -n vm.loadavg`
 # One minute average
